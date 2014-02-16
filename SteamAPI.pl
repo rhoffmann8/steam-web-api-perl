@@ -44,9 +44,6 @@ sub new {
 	$steamId = $ENV{"STEAM_ID"} or die "Must pass Steam ID or set STEAM_ID environment variable"
     }
 
-    print $apiKey."\n";
-    print $steamId."\n";
-
     my $self = {
 	_apiKey => $apiKey,
 	_steamId => $steamId
